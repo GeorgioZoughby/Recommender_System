@@ -23,6 +23,7 @@ Install dependencies:
 
 ```bash
 pip install numpy pandas matplotlib seaborn
+```
 
 ## Input Format
 
@@ -33,4 +34,3 @@ The input should be a CSV file with:
 - Cells: numerical ratings (1–5), with missing values left blank
 
 Example like the file(`ratings.csv`):
-```
