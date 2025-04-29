@@ -4,7 +4,7 @@ import numpy as np
 
 # MAIN ENTRY OF THE PROGRAM WILL GO HERE
 if __name__ == "__main__":
-    df = pd.read_csv("ratings.csv", index_col=0)
+    df = pd.read_csv("ratings_matrix_10000.csv", index_col=0)
 
     recommender = RecommenderSystem()
     recommender.fit(df)

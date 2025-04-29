@@ -1,10 +1,12 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
 import seaborn as sns
 from sklearn.metrics import mean_squared_error
 from termcolor import colored
 
+matplotlib.use("Agg") 
 
 class RecommenderSystem:
     def __init__(self):
@@ -104,6 +106,7 @@ class RecommenderSystem:
         sns.heatmap(matrix, annot=True, fmt=".1f", cmap="coolwarm")
         plt.title(title)
         plt.show()
+        
 
     def pretty_print_matrix(self, matrix):
         print("\nMatrix:")
