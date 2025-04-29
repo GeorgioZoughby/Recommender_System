@@ -34,3 +34,12 @@ The input should be a CSV file with:
 - Cells: numerical ratings (1–5), with missing values left blank
 
 Example like the file(`ratings.csv`):
+
+```
+     HP1,HP2,HP3,TW,SW1,SW2,SW3
+A    4,5,1,,,,
+B    5,5,4,,,,
+C    2,4,5,,,,
+D    3,3,,,,,
+
+```
