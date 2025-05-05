@@ -101,11 +101,14 @@ class RecommenderSystem:
         print(colored(f"\n[Evaluation RMSE: {rmse:.4f}]", "green"))
         return rmse
 
-    def plot_heatmap(self, matrix, title="Ratings Heatmap"):
+    def plot_heatmap(self, matrix, title="Ratings Heatmap", filename="heatmap.png"):
         plt.figure(figsize=(10, 6))
         sns.heatmap(matrix, annot=True, fmt=".1f", cmap="coolwarm")
         plt.title(title)
-        plt.show()
+        plt.tight_layout()
+        plt.savefig(filename)
+        plt.close()
+
         
 
     def pretty_print_matrix(self, matrix):

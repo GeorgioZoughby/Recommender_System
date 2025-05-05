@@ -12,4 +12,4 @@ if __name__ == "__main__":
     for method in ["user", "item", "baseline"]:
         preds = recommender.predict(method=method)
         recommender.pretty_print_matrix(preds)
-        recommender.plot_heatmap(preds, title=f"Predicted Ratings ({method.capitalize()} CF)")
+        recommender.plot_heatmap(preds, title=f"{method.title()} CF Predictions", filename=f"{method}_cf_heatmap.png")
